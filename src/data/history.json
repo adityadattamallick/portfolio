@@ -1,0 +1,29 @@
+[
+  {
+    "role": "CSE499",
+    "organisation": "North South University",
+    "startDate": "January, 2024",
+    "endDate": "2025",
+    "experiences": ["Worked on with deep learning, using YOLOv8, SAM and Streamlit for making an annotation tool with a smooth pipeline on a custom dataset", "Better mAP50 results"],
+    "imageSrc": "history/cse499.png"
+  },
+  {
+    "role": "CSE299",
+    "organisation": "North South University",
+    "startDate": "July, 2023",
+    "endDate": "December, 2023",
+    "experiences": ["Worked on with MERN stack - Full-Stack Web Application", "Mental Health Companion Application along with Online Doctor Consultation System"],
+    "imageSrc": "history/cse299.png"
+  },
+  {
+    "role": "CSE498R",
+    "organisation": "North South University",
+    "startDate": "January, 2025",
+    "endDate": "July, 2025",
+    "experiences": [
+      "Worked on with Face Mesh regeneration using YOLOv8 and PyTorch",
+      "Research Work - To find the limitations and fix them"
+    ],
+    "imageSrc": "history/cse498r.png"
+  }
+]
