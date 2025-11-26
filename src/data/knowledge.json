@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "center",
+      "label": "Skills",
+      "isCenter": true
+    },
+    {
+      "id": "react",
+      "label": "React",
+      "lines": ["Component-based architecture", "React Hooks (useState, useEffect, useRef)", "JSX & Virtual DOM", "State management", "Props & component lifecycle"]
+    },
+    {
+      "id": "vite",
+      "label": "Vite",
+      "lines": ["Lightning-fast dev server", "Hot module replacement (HMR)", "Optimized build process", "ES modules support", "Plugin ecosystem"]
+    },
+    {
+      "id": "d3",
+      "label": "D3.js",
+      "lines": ["Force simulation layouts", "Data visualization", "SVG manipulation", "Interactive charts", "Data-driven transformations"]
+    },
+    {
+      "id": "tailwind",
+      "label": "Tailwind CSS",
+      "lines": ["Utility-first CSS framework", "Responsive design", "Custom theme configuration", "Component styling", "Rapid prototyping"]
+    }
+  ],
+  "links": [
+    { "source": "center", "target": "react" },
+    { "source": "center", "target": "vite" },
+    { "source": "center", "target": "d3" },
+    { "source": "center", "target": "tailwind" }
+  ]
+}
