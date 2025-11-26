@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Mental Health Companion App",
+    "imageSrc": "projects/project.png",
+    "description": "This project was built as an academic part as well as with some possiblity to help people for venting.",
+    "skills": ["React", "Express", "Node", "MongoDB", "Tailwind CSS"],
+    "demo": "Working on the revision - to be added soon",
+    "source": "Working on the revision - to be added soon"
+  },
+  {
+    "title": "Dental Disease Detection App",
+    "imageSrc": "projects/project.png",
+    "description": "This project was built as an academic research work, a deep-learning project, along with an interactive GUI for easing the use of it to the end-users.",
+    "skills": ["PyTorch", "YOLOv8", "SAM - Segment Anything Model", "Streamlit"],
+    "demo": "Will be adding soon",
+    "source": "Will be adding soon"
+  },
+  {
+    "title": "Academic Research Project to Find Flaws on a Given Dataset for Generating Facemesh",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to figure out the limitations of YOLOv8, trying to generate facemesh from a dataset, used with old technologies.",
+    "skills": ["PyTorch", "YOLOv8", "Python"],
+    "demo": "Will be adding soon",
+    "source": "Will be adding soon"
+  }
+]
