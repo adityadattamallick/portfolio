@@ -146,7 +146,7 @@ export default function KnowledgeGraph() {
 
   return (
     <>
-      <section className={styles.container}>
+      <section className={styles.container} id="knowledgegraph">
         <h2 className={styles.title}>Skills</h2>
         <svg ref={svgRef} className={styles.svg} />
 
