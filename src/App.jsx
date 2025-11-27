@@ -5,6 +5,7 @@ import { About } from "./components/About/About";
 import { Experience } from "./components/Experience/Experience";
 import { Projects } from "./components/Projects/Projects";
 import KnowledgeGraph from "./components/KnowledgeGraph/KnowledgeGraph";
+import { Contact } from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Experience />
       <Projects />
       <KnowledgeGraph />
+      <Contact />
     </div>
   );
 }

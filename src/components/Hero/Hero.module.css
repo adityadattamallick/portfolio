@@ -47,7 +47,7 @@
   font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(132, 223, 102, 0.25);
+  box-shadow: 0 0 4px 0 rgba(62, 92, 136, 0.25);
 }
 
 .heroImg {
@@ -81,7 +81,7 @@
   top: -128px;
   left: -10vw;
   border-radius: 764px;
-  background: rgba(95, 203, 68, 0.698);
+  background: rgba(36, 89, 127, 0.698);
   filter: blur(100px);
   z-index: 0;
 }
@@ -95,7 +95,7 @@
   top: 246px;
   right: -25vw;
   border-radius: 764px;
-  background: rgba(59, 160, 72, 0.706);
+  background: rgba(42, 98, 116, 0.706);
   filter: blur(100px);
   z-index: 0;
 }
