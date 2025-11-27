@@ -15,7 +15,7 @@ export const Hero = () => {
           stuff there, such as DSA, computer architechture, computer networking,
           machine learning, web development. I needed to submit projects for
           acadmic courses to get an evaluation on my skills there. Also, I
-          worked on a two research projects there on deep-learning.
+          worked on two acadmic research projects there on deep-learning.
         </p>
         <a href="mailto:mymail@gmail.com" className={styles.contactBtn}>
           Contact Me
