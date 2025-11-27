@@ -8,28 +8,149 @@
     {
       "id": "react",
       "label": "React",
-      "lines": ["Component-based architecture", "React Hooks (useState, useEffect, useRef)", "JSX & Virtual DOM", "State management", "Props & component lifecycle"]
+      "lines": [
+        "Component-based architecture",
+        "React Hooks (useState, useEffect, useRef)",
+        "JSX & Virtual DOM",
+        "State management",
+        "Props & component lifecycle"
+      ]
     },
     {
       "id": "vite",
       "label": "Vite",
-      "lines": ["Lightning-fast dev server", "Hot module replacement (HMR)", "Optimized build process", "ES modules support", "Plugin ecosystem"]
+      "lines": [
+        "Lightning-fast dev server",
+        "Hot module replacement (HMR)",
+        "Optimized build process",
+        "ES modules support",
+        "Plugin ecosystem"
+      ]
     },
     {
       "id": "d3",
       "label": "D3.js",
-      "lines": ["Force simulation layouts", "Data visualization", "SVG manipulation", "Interactive charts", "Data-driven transformations"]
+      "lines": [
+        "Force simulation layouts",
+        "Data visualization",
+        "SVG manipulation",
+        "Interactive charts",
+        "Data-driven transformations"
+      ]
     },
     {
       "id": "tailwind",
       "label": "Tailwind CSS",
-      "lines": ["Utility-first CSS framework", "Responsive design", "Custom theme configuration", "Component styling", "Rapid prototyping"]
+      "lines": [
+        "Utility-first CSS framework",
+        "Responsive design",
+        "Custom theme configuration",
+        "Component styling",
+        "Rapid prototyping"
+      ]
+    },
+    {
+      "id": "cpp",
+      "label": "C++",
+      "lines": [
+        "Object-oriented programming",
+        "Memory management",
+        "STL (Standard Template Library)",
+        "Pointers & references",
+        "Efficient system-level programming"
+      ]
+    },
+    {
+      "id": "dsa",
+      "label": "Data Structures & Algorithms",
+      "lines": [
+        "Arrays, Linked Lists, Trees, Graphs",
+        "Sorting & searching",
+        "Dynamic programming",
+        "Time & space complexity analysis",
+        "Algorithmic problem solving"
+      ]
+    },
+    {
+      "id": "networking",
+      "label": "Computer Networking",
+      "lines": [
+        "TCP/IP & UDP",
+        "OSI model",
+        "Routing & switching fundamentals",
+        "HTTP/HTTPS",
+        "Network protocols & architectures"
+      ]
+    },
+    {
+      "id": "deep-learning",
+      "label": "Deep Learning",
+      "lines": [
+        "Neural networks",
+        "CNNs & RNNs",
+        "Backpropagation",
+        "TensorFlow / PyTorch basics",
+        "Model training & evaluation"
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "label": "Machine Learning",
+      "lines": [
+        "Supervised & unsupervised learning",
+        "Regression & classification",
+        "Feature engineering",
+        "Model evaluation",
+        "ML pipelines"
+      ]
+    },
+    {
+      "id": "problem-solving",
+      "label": "Problem Solving",
+      "lines": [
+        "Analytical thinking",
+        "Pattern recognition",
+        "Logical reasoning",
+        "Efficient solution design",
+        "Optimization strategies"
+      ]
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "lines": [
+        "Shell navigation",
+        "File system management",
+        "Permissions & processes",
+        "Bash scripting",
+        "System administration basics"
+      ]
+    },
+    {
+      "id": "mern",
+      "label": "MERN Stack",
+      "lines": [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "Full-stack application development"
+      ]
     }
   ],
   "links": [
     { "source": "center", "target": "react" },
     { "source": "center", "target": "vite" },
     { "source": "center", "target": "d3" },
-    { "source": "center", "target": "tailwind" }
+    { "source": "center", "target": "tailwind" },
+
+    { "source": "center", "target": "cpp" },
+    { "source": "center", "target": "dsa" },
+    { "source": "center", "target": "networking" },
+    { "source": "center", "target": "deep-learning" },
+    { "source": "center", "target": "machine-learning" },
+    { "source": "center", "target": "problem-solving" },
+    { "source": "center", "target": "linux" },
+    { "source": "center", "target": "mern" }
   ]
 }
