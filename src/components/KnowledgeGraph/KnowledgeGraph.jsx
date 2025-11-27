@@ -133,6 +133,17 @@ export default function KnowledgeGraph() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "Escape") {
+        setSelected(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
   return (
     <>
       <section className={styles.container}>

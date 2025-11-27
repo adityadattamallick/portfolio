@@ -27,6 +27,8 @@
   max-height: 600px;
   background: transparent;
   font-family: var(--font-roboto), sans-serif;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
 }
 
 .link {
@@ -36,11 +38,11 @@
 }
 
 .circle {
+  font-size: 35%;
   fill: var(--color-primary);
-  stroke: white;
   stroke-width: 3;
   cursor: pointer;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 4px 8px rgba(70, 63, 63, 0.961));
   transition: transform 0.2s ease;
 }
 
@@ -53,16 +55,17 @@
   stroke: white;
   stroke-width: 4;
   cursor: pointer;
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 6px 12px rgba(95, 101, 95, 0.834));
   transition: transform 0.25s ease;
 }
 
 .centerCircle:hover {
+  font-size: 100%;
   transform: scale(1.04);
 }
 
 .label {
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 600;
   text-anchor: middle;
   fill: var(--color-text);
@@ -137,6 +140,8 @@
 }
 
 .line:hover {
+  font-size: 30px;
+  font-weight: 600;
   background: rgba(0, 0, 0, 0.05);
 }
 
