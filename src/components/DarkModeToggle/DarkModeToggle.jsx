@@ -13,7 +13,7 @@ export const DarkModeToggle = () => {
     >
       <div className={styles.toggleIcon}>
         {isDark ? (
-          <span className={styles.bulbIcon}>️🟡</span>
+          <span className={styles.bulbIcon}>️☀</span>
         ) : (
           <span className={styles.bulbOffIcon}>☀</span>
         )}

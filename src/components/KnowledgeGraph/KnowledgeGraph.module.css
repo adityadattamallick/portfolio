@@ -12,13 +12,11 @@
 .container {
   margin: 0%;
   padding: 0%;
-  color: var(--color-text);
   margin-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
   position: relative;
 }
-
 
 .svg {
   margin: 0%;
@@ -29,7 +27,7 @@
   background: transparent;
   font-family: var(--font-roboto), sans-serif;
   background: var(--color-bg);
-  background: linear-gradient(90deg, var(--color-secondary) 0%, rgba(25, 55, 109, 0) 100%);
+  background: linear-gradient(90deg, #b8c6cb) 0%, rgba(25, 55, 109, 0) 100%);
 }
 
 .link {

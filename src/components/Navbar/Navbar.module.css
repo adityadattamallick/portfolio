@@ -75,12 +75,6 @@
     margin-bottom: 0;
   }
 
-
-
-
-
-
-
   .menuBtn {
     display: block;
     position: relative;
@@ -105,8 +99,8 @@
     gap: 13px;
     border-radius: 10px;
     background: linear-gradient(0deg,
-        rgba(25, 61, 109, 0.2) 0%,
-        rgb(25, 52, 109) 100%);
+        rgba(25, 75, 109, 0.3) 0%,
+        #b8c6cb 100%);
 
     box-shadow: 0 0 4px 0 var(--color-shadow);
     position: fixed;
