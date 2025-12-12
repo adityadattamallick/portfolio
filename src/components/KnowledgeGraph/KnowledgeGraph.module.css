@@ -27,12 +27,12 @@
   max-height: 600px;
   background: transparent;
   font-family: var(--font-roboto), sans-serif;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  background: #cee1e7;
+  background: linear-gradient(90deg, #d8e7f0 0%, rgba(25, 55, 109, 0) 100%);
 }
 
 .link {
-  stroke: white;
+  stroke: rgb(84, 139, 164);
   stroke-width: 2;
   opacity: 0.45;
 }
@@ -41,21 +41,26 @@
   font-size: 35%;
   fill: var(--color-primary);
   stroke-width: 3;
-  cursor: pointer;
+  cursor: grab;
   filter: drop-shadow(0 4px 8px rgba(70, 63, 63, 0.961));
   transition: transform 0.2s ease;
 }
 
 .circle:hover {
   transform: scale(1.1);
+  box-shadow: #93b4c0;
+}
+
+.circle:active {
+  cursor: grabbing;
 }
 
 .centerCircle {
   fill: var(--color-secondary);
   stroke: white;
   stroke-width: 4;
-  cursor: pointer;
-  filter: drop-shadow(0 6px 12px rgba(95, 101, 95, 0.834));
+  cursor: grab;
+  filter: drop-shadow(0 6px 12px rgba(95, 99, 101, 0.834));
   transition: transform 0.25s ease;
 }
 
@@ -64,8 +69,12 @@
   transform: scale(1.04);
 }
 
+.centerCircle:active {
+  cursor: grabbing;
+}
+
 .label {
-  font-size: 25px;
+  font-size: 12px;
   font-weight: 600;
   text-anchor: middle;
   fill: var(--color-text);
@@ -74,7 +83,7 @@
 }
 
 .label tspan {
-  font-size: 13px;
+  font-size: inherit;
   font-weight: 600;
 }
 
@@ -86,9 +95,9 @@
   width: 280px;
   max-width: 90%;
   padding: 20px;
-  background: white;
+  background: rgba(217, 235, 245, 0.657);
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 8px 20px rgba(198, 227, 242, 0.16);
   font-family: var(--font-roboto), sans-serif;
   color: var(--color-text);
   z-index: 10;
@@ -101,7 +110,7 @@
   background: none;
   border: none;
   font-size: 28px;
-  color: var(--color-dark);
+  color: var(--color-text);
   cursor: pointer;
   padding: 0;
   width: 30px;
@@ -118,7 +127,7 @@
 
 .panel h3 {
   margin: 0 0 16px 0;
-  color: var(--color-dark);
+  color: var(--color-text);
   font-weight: 700;
   font-size: 18px;
   padding-right: 20px;
@@ -132,7 +141,7 @@
 
 .line {
   font-size: 14px;
-  color: var(--color-primary);
+  color: var(--color-text);
   padding: 8px 12px;
   background: rgba(0, 0, 0, 0.02);
   border-radius: 6px;
@@ -142,12 +151,10 @@
 .line:hover {
   font-size: 30px;
   font-weight: 600;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(195, 229, 244, 0.837);
 }
 
 @media screen and (max-width: 830px) {
-
-  /* Adjust D3 element appearance */
   .centerCircle {
     stroke-width: 3;
   }

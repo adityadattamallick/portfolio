@@ -49,7 +49,25 @@ export default function KnowledgeGraph() {
       .selectAll("g")
       .data(graphData.nodes)
       .enter()
-      .append("g");
+      .append("g")
+      .call(
+        d3
+          .drag()
+          .on("start", (event, d) => {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+          })
+          .on("drag", (event, d) => {
+            d.fx = event.x;
+            d.fy = event.y;
+          })
+          .on("end", (event, d) => {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+          })
+      );
 
     node
       .append("circle")
@@ -66,37 +84,85 @@ export default function KnowledgeGraph() {
         }
       });
 
+    // Helper function to wrap text
+    const wrapText = (text, maxChars) => {
+      const words = text.split(/\s+/);
+      const lines = [];
+      let currentLine = words[0];
+
+      for (let i = 1; i < words.length; i++) {
+        const testLine = currentLine + " " + words[i];
+
+        if (testLine.length <= maxChars) {
+          currentLine = testLine;
+        } else {
+          lines.push(currentLine);
+          currentLine = words[i];
+        }
+      }
+      lines.push(currentLine);
+      return lines;
+    };
+
     node.each(function (d) {
-      const text = d3
+      const textGroup = d3
         .select(this)
         .append("text")
         .attr("class", styles.label)
         .attr("text-anchor", "middle");
 
-      if (d.isCenter) {
-        text.attr("dy", 5).text(d.label);
-      } else {
-        const words = d.label.split(" ");
-        if (words.length > 1 && d.label.length > 8 && !isMobile) {
-          words.forEach((word, i) => {
-            text
-              .append("tspan")
-              .attr("x", 0)
-              .attr("dy", i === 0 ? -6 : 14)
-              .text(word);
-          });
-        } else {
-          text.attr("dy", 5).text(d.label);
-        }
-      }
+      const radius = d.isCenter ? centerRadius : circleRadius;
+      const fontSize = isMobile ? 11 : d.isCenter ? 14 : 12;
+
+      // Calculate max characters based on circle size
+      const maxChars = Math.floor(radius / (fontSize * 0.5));
+      const lines = wrapText(d.label, maxChars);
+
+      const lineHeight = fontSize + 2;
+      const totalHeight = lines.length * lineHeight;
+      const startY = -(totalHeight / 2) + lineHeight / 2;
+
+      lines.forEach((line, i) => {
+        textGroup
+          .append("tspan")
+          .attr("x", 0)
+          .attr("y", i === 0 ? startY : undefined)
+          .attr("dy", i === 0 ? 0 : lineHeight)
+          .style("font-size", `${fontSize}px`)
+          .text(line);
+      });
     });
 
     simulation.on("tick", () => {
       link
-        .attr("x1", (d) => d.source.x)
-        .attr("y1", (d) => d.source.y)
-        .attr("x2", (d) => d.target.x)
-        .attr("y2", (d) => d.target.y);
+        .attr("x1", (d) => {
+          const dx = d.target.x - d.source.x;
+          const dy = d.target.y - d.source.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const sourceRadius = d.source.isCenter ? centerRadius : circleRadius;
+          return d.source.x + (dx * sourceRadius) / distance;
+        })
+        .attr("y1", (d) => {
+          const dx = d.target.x - d.source.x;
+          const dy = d.target.y - d.source.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const sourceRadius = d.source.isCenter ? centerRadius : circleRadius;
+          return d.source.y + (dy * sourceRadius) / distance;
+        })
+        .attr("x2", (d) => {
+          const dx = d.target.x - d.source.x;
+          const dy = d.target.y - d.source.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const targetRadius = d.target.isCenter ? centerRadius : circleRadius;
+          return d.target.x - (dx * targetRadius) / distance;
+        })
+        .attr("y2", (d) => {
+          const dx = d.target.x - d.source.x;
+          const dy = d.target.y - d.source.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const targetRadius = d.target.isCenter ? centerRadius : circleRadius;
+          return d.target.y - (dy * targetRadius) / distance;
+        });
 
       const clampedX = (x) =>
         Math.max(circleRadius, Math.min(width - circleRadius, x));
@@ -150,7 +216,6 @@ export default function KnowledgeGraph() {
         <h2 className={styles.title}>Skills</h2>
         <svg ref={svgRef} className={styles.svg} />
 
-        {}
         {selected && (
           <div className={styles.panel}>
             <button

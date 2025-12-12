@@ -24,11 +24,9 @@
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
-  );
+  background: linear-gradient(90deg,
+      rgb(0, 0, 0) 70%,
+      rgb(0, 0, 0) 120%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -47,15 +45,14 @@
   font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(62, 92, 136, 0.25);
+  box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.25);
 }
 
 .heroImg {
   width: 50%;
   z-index: 1;
-
-  animation-name: floating;
-  animation-duration: 3s;
+  animation-name: none;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -64,9 +61,11 @@
   0% {
     transform: translate(0, 0px);
   }
+
   50% {
     transform: translate(0, 10px);
   }
+
   100% {
     transform: translate(0, -0px);
   }
@@ -81,7 +80,7 @@
   top: -128px;
   left: -10vw;
   border-radius: 764px;
-  background: rgba(36, 89, 127, 0.698);
+  background: rgba(239, 242, 245, 0);
   filter: blur(100px);
   z-index: 0;
 }
@@ -95,7 +94,7 @@
   top: 246px;
   right: -25vw;
   border-radius: 764px;
-  background: rgba(42, 98, 116, 0.706);
+  background: rgba(220, 230, 234, 0);
   filter: blur(100px);
   z-index: 0;
 }
