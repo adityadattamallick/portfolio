@@ -1,11 +1,36 @@
 :root {
-  /* Colours */
+  /* Light theme colors */
   --color-text: #000000;
   --color-primary: #98bbcad0;
   --color-secondary: #fefefe;
   --color-dark: #f1f1f3;
   --color-bg: #e4e9f0;
 
+  /* Additional light theme colors */
+  --color-accent: #263f45;
+  --color-accent-hover: #1f3d53;
+  --color-border: #d1d5db;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Transition */
+  --transition-theme: all 0.3s ease;
+
   /* Fonts */
   --font-roboto: "Roboto";
+}
+
+
+/* Dark theme colors */
+[data-theme="dark"] {
+  --color-text: #ffffff;
+  --color-primary: #2a5184;
+  --color-secondary: #334b82;
+  --color-dark: #1e3c6c;
+  --color-bg: #0f224f;
+
+  /* Additional dark theme colors */
+  --color-accent: #425974;
+  --color-accent-hover: #425974;
+  --color-border: #334155;
+  --color-shadow: rgba(0, 0, 0, 0.5);
 }

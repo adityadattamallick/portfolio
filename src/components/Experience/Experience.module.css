@@ -63,15 +63,18 @@
   gap: 40px;
 }
 
+
 .historyItem {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: #dbe5ea;
-  background: linear-gradient(90deg, #c5d9e1 0%, rgba(25, 55, 109, 0) 100%);
+  background: var(--color-secondary);
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
   border-radius: 10px;
   padding: 24px;
+  border: 1px solid var(--color-border);
+  transition: var(--transition-theme);
 }
 
 .historyItem img {
