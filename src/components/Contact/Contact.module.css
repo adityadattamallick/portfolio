@@ -32,17 +32,25 @@
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 25px;
+  row-gap: 26px;
+  align-items: center;
   list-style: none;
-  gap: 26px;
+  justify-self: end;
 }
 
 .link {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+  display: contents;
+}
+
+.link img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+  justify-self: center;
 }
 
 .link a {
@@ -51,7 +59,9 @@
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  line-height: 1;
   transition: var(--transition-theme);
+  justify-self: start;
 }
 
 .link a:hover {
@@ -63,6 +73,7 @@
   .container {
     flex-direction: column;
     gap: 23px;
+    align-items: center;
   }
 
   .text {
@@ -72,7 +83,23 @@
   }
 
   .links {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 15px;
+    row-gap: 20px;
     align-items: center;
+    justify-items: start;
+  }
+
+  .link {
+    display: contents;
+  }
+
+  .link img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    justify-self: center;
   }
 
   .text h2 {
@@ -85,5 +112,7 @@
 
   .link a {
     font-size: 20px;
+    line-height: 1.2;
+    justify-self: start;
   }
 }
