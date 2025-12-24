@@ -14,7 +14,7 @@ export const About = () => {
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
+          {/* <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
@@ -23,13 +23,14 @@ export const About = () => {
                 and optimized and interactive sites.
               </p>
             </div>
-          </li>
+          </li> */}
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
+              <h3>Full-Stack Development</h3>
               <p>
-                I have experience developing fast and optimized back-end systems
+                I have experience in building responsive
+                and interactive sites along with developing fast and optimized back-end systems
                 and APIs.
               </p>
             </div>

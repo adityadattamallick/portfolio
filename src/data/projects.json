@@ -11,7 +11,7 @@
     "title": "Dental Disease Detection App",
     "imageSrc": "projects/project.png",
     "description": "This project was built as an academic research work, a deep-learning project, along with an interactive GUI for easing the use of it to the end-users.",
-    "skills": ["PyTorch", "YOLOv8", "SAM - Segment Anything Model", "Streamlit"],
+    "skills": ["PyTorch", "YOLOv8", "SAM", "Streamlit"],
     "demo": "Will be adding soon",
     "source": "Will be adding soon"
   },

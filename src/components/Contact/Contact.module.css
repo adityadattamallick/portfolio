@@ -13,6 +13,7 @@
   padding: 58px 10%;
   gap: 10px;
   transition: var(--transition-theme);
+  max-height: fit-content;
 }
 
 .text h2 {
