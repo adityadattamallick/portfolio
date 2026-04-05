@@ -6,13 +6,13 @@
     "skills": ["PyTorch", "YOLOv8", "SAM", "Streamlit"]
   },
   {
-    "title": "Mental Health Companion App",
+    "title": "Mental Health Companion App — Doctor Patient Appointment & Venting System",
     "imageSrc": "projects/project.png",
     "description": "This project was built as an academic part as well as with some possiblity to help people for venting.",
     "skills": ["React", "Express", "Node", "MongoDB", "Tailwind CSS"]
   },
   {
-    "title": "Academic Research Project to Find Flaws on a Given Dataset for Generating Facemesh",
+    "title": "The Impact of Label Mismatch in YOLO Training for AFLW2000-3D Face Landmark Estimation",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to figure out the limitations of YOLOv8, trying to generate facemesh from a dataset, used with old technologies.",
     "skills": ["PyTorch", "YOLOv8", "Python"]
