@@ -1,4 +1,5 @@
 import { profile } from "@/data/profile";
+import { MobileMenu } from "./MobileMenu";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.css";
 
@@ -24,6 +25,7 @@ export function Header() {
             </a>
           ))}
         </nav>
+        <MobileMenu items={nav} />
         <ThemeToggle />
       </div>
     </header>

@@ -44,7 +44,7 @@
     display: none;
   }
 
-  .inner > button {
-    margin-left: auto;
+  .inner {
+    gap: 8px;
   }
 }

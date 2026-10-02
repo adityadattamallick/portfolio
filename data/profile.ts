@@ -24,7 +24,7 @@ export type Work = {
 export const profile = {
   name: "Aditya Narayan Datta Mallick",
   shortName: "Aditya Datta",
-  headline: "Research Assistant · ML/DL · Audio Processing · Full-Stack AI",
+  headline: "Research Assistant · ML/DL · Computer Vision · Audio Processing · Full-Stack AI",
   intro:
     "Computer Science and Engineering graduate from North South University. I work on machine learning and deep learning research across computer vision and audio processing, and I build full-stack AI applications that take models from research to working products.",
   email: { user: "adityadatta111", domain: "gmail.com" },
@@ -33,6 +33,10 @@ export const profile = {
     {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/aditya-narayan-datta-mallick/",
+    },
+    {
+      label: "ResearchGate",
+      href: "https://www.researchgate.net/profile/Aditya-Narayan-Datta-Mallick",
     },
   ] satisfies Link[],
 };
@@ -45,7 +49,7 @@ export const experience: Experience[] = [
     end: "Present",
     status: "Ongoing",
     summary:
-      "Contributing to an ongoing research project. The organisation and project details are confidential and will be shared once permitted.",
+      "Research in audio processing and classification, along with other confidential projects. The organisation and project details are confidential for now and will be added once I can share them.",
   },
 ];
 
